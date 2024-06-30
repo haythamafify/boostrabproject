@@ -236,7 +236,7 @@
         <hr />
         <ul class="nav nav-pills flex-column mb-auto">
           <li class="nav-item">
-            <a href="#" class="nav-link active" aria-current="page">
+            <a href="/" class="nav-link text-white" aria-current="page">
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#home" />
               </svg>
@@ -245,7 +245,10 @@
           </li>
 
           <li>
-            <a href="./user/addcustomer.html" class="nav-link link-body-emphasis">
+            <a
+              href="./user/addcustomer.html"
+              class="nav-link link-body-emphasis active"
+            >
               <svg class="bi pe-none me-2" width="16" height="16">
                 <use xlink:href="#people-circle" />
               </svg>
@@ -283,11 +286,12 @@
       <div class="b-example-divider b-example-vr"></div>
 
       <section class="border w-100">
+        <!-- Start Nav -->
         <nav class="navbar bg-body-tertiary">
           <div
             class="container-fluid justify-content-sm-center mb-sm-1 justify-content-md-between"
           >
-            <a class="navbar-brand fw-bold fs-4">Home</a>
+            <a class="navbar-brand fw-bold fs-4">Customers</a>
             <form class="d-flex" role="search">
               <input
                 class="form-control me-2"
@@ -301,55 +305,73 @@
             </form>
           </div>
         </nav>
+        <!-- End Nav -->
+        <!-- Start Form -->
+        <form class="row g-3 mt-3 m-auto">
+          <div class="col-12 col-md-6">
+            <label for="firstname" class="form-label">First Name</label>
+            <input type="text" class="form-control" id="firstname" />
+          </div>
 
-        <table class="table">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">Full Name</th>
-              <th scope="col">Gender</th>
-              <th scope="col">Country</th>
-              <th scope="col">Last Update</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-              <td>@mdo</td>
-              <td>
-                <a
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="User Details"
-                  href="./user/view.html"
-                  class="btn-sm btn btn btn-primary"
-                  ><i class="bi bi-eye"></i
-                ></a>
-                <a
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="Edit User"
-                  href="./user/edit.html"
-                  class="btn-sm btn btn-primary"
-                  ><i class="bi bi-pencil"></i
-                ></a>
+          <div class="col-12 col-md-6">
+            <label for="lastname" class="form-label">Last Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              placeholder="Last name"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" />
+          </div>
+          <div class="col-12 col-md-6">
+            <label for="telephone" class="form-label">Telephone</label>
+            <input
+              type="number"
+              class="form-control"
+              id="telephone"
+              placeholder="0123456789"
+            />
+          </div>
+          <div class="col-12">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" class="form-control" id="age" />
+          </div>
 
-                <button
-                  data-bs-toggle="tooltip"
-                  data-bs-placement="top"
-                  data-bs-title="Delete User"
-                  class="btn btn-sm btn-danger"
-                >
-                  <i class="bi bi-trash"></i>
-                </button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+          <div class="col-12">
+            <label for="country" class="form-label">Country</label>
+            <select id="country" class="form-select">
+                <option selected disabled hidden>Choose ...</option>
+                <option >Egypt</option>
+                <option>Australia</option>
+              <option>Brazil</option>
+              <option>Canada</option>
+              <option>Germany</option>
+              <option>India</option>
+              <option>Japan</option>
+              <option>Mexico</option>
+              <option>Nigeria</option>
+              <option>South Korea</option>
+              <option>United Kingdom</option>
+            </select>
+          </div>
+          <div class="col-12 col-md-4">
+            <label for="gender" class="form-label">Gender</label>
+            <select id="gender" class="form-select">
+              <option selected hidden disabled>Choose...</option>
+              <option >Male</option>
+              <option>Femal</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+
+        <!-- End Form -->
       </section>
     </main>
     <script src="../js/bootstrap.bundle.min.js"></script>
