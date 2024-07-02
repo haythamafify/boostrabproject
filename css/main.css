@@ -1,0 +1,7 @@
+.small-sidebar {
+  width: 80px !important;
+  transition: 0.3s !important;
+}
+.small-sidebar .sidebar-text {
+  display: none;
+}

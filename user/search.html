@@ -9,7 +9,7 @@
   <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
   <meta name="generator" content="Hugo 0.122.0" />
   <title>Bootstrap Project</title>
 
@@ -96,8 +96,8 @@
   </style>
 
   <!-- Custom styles for this template -->
-  <link href="sidebars.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./css/main.css" />
+  <link href="../sidebars.js" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
@@ -186,14 +186,14 @@
   </svg>
 
   <main class="d-flex flex-nowrap">
-    <div id="sidebar" class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px">
+    <div class="d-flex flex-column flex-shrink-0 p-3 bg-body-tertiary" style="width: 280px">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <svg class="bi pe-none me-2" width="40" height="32">
           <use xlink:href="#bootstrap" />
         </svg>
         <i class="bi bi-lightning-charge me-3 fs-5 fw-bold"></i>
 
-        <span class="fs-4"> sidebar</span>
+        <span class="fs-4"> Home</span>
       </a>
       <hr />
       <ul class="nav nav-pills flex-column mb-auto">
@@ -202,8 +202,7 @@
             <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#home" />
             </svg>
-            <span class="sidebar-text">Home</span>
-
+            Home
           </a>
         </li>
 
@@ -212,7 +211,7 @@
             <svg class="bi pe-none me-2" width="16" height="16">
               <use xlink:href="#people-circle" />
             </svg>
-            <span class="sidebar-text">Add Customers</span>
+            Add Customers
           </a>
         </li>
       </ul>
@@ -220,8 +219,8 @@
       <div class="dropdown">
         <a href="#" class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
           data-bs-toggle="dropdown" aria-expanded="false">
-          <img src="./imgs/profile.jpg" alt="" width="32" height="32" class="rounded-circle me-2" />
-          <strong class="sidebar-text">Haytham Gamal</strong>
+          <img src="../imgs/profile.jpg" alt="" width="32" height="32" class="rounded-circle me-2" />
+          <strong>Haytham Gamal</strong>
         </a>
         <ul class="dropdown-menu text-small shadow">
           <li><a class="dropdown-item" href="#">New project...</a></li>
@@ -240,11 +239,7 @@
     <section class="border w-100">
       <nav class="navbar bg-body-tertiary">
         <div class="container-fluid justify-content-sm-center mb-sm-1 justify-content-md-between">
-          <a class="navbar-brand fw-bold fs-4">
-            <button class="btn btn-sm" onclick="toggleSidebar()">
-              <i class="bi bi-list"></i>
-            </button>Home</a>
-
+          <a class="navbar-brand fw-bold fs-4">Home</a>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
             <button class="btn btn-outline-success" type="submit">
@@ -261,8 +256,8 @@
             <th scope="col">Full Name</th>
             <th scope="col">Gender</th>
             <th scope="col">Country</th>
-            <th scope="col">Last Update</th>
             <th scope="col">Action</th>
+
           </tr>
         </thead>
         <tbody>
@@ -271,7 +266,7 @@
             <td>Mark</td>
             <td>Otto</td>
             <td>@mdo</td>
-            <td>@mdo</td>
+
             <td>
               <a data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Customer Details"
                 href="./user/view.html" class="btn-sm btn btn btn-primary"><i class="bi bi-eye"></i></a>
@@ -291,8 +286,7 @@
 
   <script src="../js/bootstrap.bundle.min.js"></script>
 
-  <script src="sidebars.js"></script>
-  <script src="./js/main.js"></script>
+  <script src="../sidebars.js"></script>
 </body>
 
 </html>
