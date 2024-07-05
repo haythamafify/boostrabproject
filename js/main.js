@@ -1,6 +1,20 @@
+let currentState = localStorage.getItem("issamll");
+let sidebar = document.getElementById("sidebar");
 
+if (currentState === "yes") {
+  sidebar.classList.add("small-sidebar");
+} else {
+  sidebar.classList.remove("small-sidebar");
+}
 function toggleSidebar() {
-    var sidebar = document.getElementById('sidebar'); // Replace 'sidebar' with the actual ID of your sidebar element
-    sidebar.classList.toggle("small-sidebar");
+  currentState = localStorage.getItem("issamll");
+
+  if (currentState === "yes") {
+    localStorage.setItem("issamll", "no");
+    sidebar.classList.remove("small-sidebar");
+  } else {
+    localStorage.setItem("issamll", "yes");
+    sidebar.classList.add("small-sidebar");
   }
- 
+  // sidebar.classList.toggle("small-sidebar");
+}

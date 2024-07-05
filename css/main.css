@@ -1,7 +1,50 @@
 .small-sidebar {
-  width: 80px !important;
+  width: 77px !important;
   transition: 0.3s !important;
+  position: relative;
 }
 .small-sidebar .sidebar-text {
   display: none;
+}
+
+.bi-lightning-charge {
+  rotate: 30deg;
+  transition: 1s;
+  position: absolute;
+  left: -31px;
+}
+.bi-lightning-charge-fill::before {
+  content: "\f46c";
+  top: 11px;
+  position: absolute;
+  left: -15px;
+}
+.small-sidebar .bi-lightning-charge::before {
+  content: "\f46d";
+  transform: rotateX(360deg);
+}
+.bi-x-circle {
+  font-size: 1rem;
+  position: absolute;
+  right: -181px;
+  top: -10px;
+}
+.small-sidebar .bi-x-circle {
+  font-size: 1rem;
+  position: absolute;
+  right: 42px;
+  top: -3px;
+}
+.bi-lightning-charge-fill {
+  position: relative;
+}
+.small-sidebar .bi-lightning-charge-fill::before {
+  content: "\f46c";
+  position: absolute;
+  left: -33px;
+  top: 14px;
+  margin-bottom: 0;
+}
+.bm-20 {
+  margin-bottom: 20px !important;
 }
