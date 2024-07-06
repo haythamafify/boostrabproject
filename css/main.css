@@ -28,11 +28,15 @@
   position: absolute;
   right: -181px;
   top: -10px;
+  font-size: 1.5rem;
+  transition: 1s;
 }
 .small-sidebar .bi-x-circle {
-  font-size: 1rem;
+  font-size: 1rem !important;
   position: absolute;
   right: 42px;
+  font-size: 1rem;
+  transition: 1s;
   top: -3px;
 }
 .bi-lightning-charge-fill {
@@ -47,4 +51,8 @@
 }
 .bm-20 {
   margin-bottom: 20px !important;
+}
+
+.small-sidebar .bi-x-circle::before {
+  content: "\F134";
 }
